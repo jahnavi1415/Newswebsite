@@ -1,38 +1,145 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: inter;
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 1rem;
+
+  background-color:rgb(209, 236, 246);
+  
+}
+
+.all__news {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  
+}
+
+.news {
+  max-width: 500px;
+  padding: 30px;
+  border: 5px inset darkcyan;
+  border-radius: 75px;
+  background-color: honeydew;
+  color: #050808;
+
+}
+.news:hover{
+  border: 7px outset darkcyan;
+
+}
+
+.news__title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid darkslategray;
+  color:black;
+  font-size:30px;
+}
+.main-nav:active
+{
+  color:purple;
+}
+.main-nav-active{
+  color:tomato;
+}
+
+.App-header
+{
+	 background-color:rgb(12,4,106); 
+  list-style-type: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  border-radius: 30px;
+   text-decoration: none;
+   color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.App-header li {
+  display: inline-block;
+  font-size: 22px;
+  padding-right: 20px;
+  padding:  25px;
+
+  text-decoration: none;
+  color: black;
+  width:200px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	Link:link{color:black; text-decoration: none; padding: 3px 4px;border-radius: 3px;}
+
+
+.List:visited{color:black;}
+.List:hover{color: black;text-decoration: underline; background-color:#3FC1C9;
+border-radius: 20px; font-weight: bolder; width: 220px; padding:20px;}
+
+.head__text {
+  margin-top: 30px;
+  color: darkmagenta;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.news__desc {
+  padding-top: 20px;
+  line-height: 25px;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.news__published {
+  margin-left: 100x;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news__source{
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(122, 122, 122);
+  
+}
+.news__source{
+  text-decoration: none;
+  color:green;
+  
+}
+.news__url{
+  color:white;
+padding: 10px;
+font-size: 20px;
+  border-radius: 5px;
+  margin-left: 150px;
+
+  background-color: cadetblue;
+  
+
+}
+
+.news:hover
+{
+  font-weight: bold;
+  border-radius: 65px;
+  background-color: rgb(244,255,255) ;
+  padding: auto;
+}
+.image{
+  border-radius: 20px;
+}
+button{
+  margin:2rem 0;
+  padding: 1rem 2rem;
+  width: 120px;
+  cursor: pointer;
+}
+img2{
+  width:120px;
 }

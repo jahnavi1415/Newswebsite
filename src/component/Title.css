@@ -1,0 +1,31 @@
+* {
+  
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    height: max-content;
+  }
+  .waviy {
+    position: relative;
+    position: relative;
+   
+    font-size: 30px;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(14, 17, 26);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  
